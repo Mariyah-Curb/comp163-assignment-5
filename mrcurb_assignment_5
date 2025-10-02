@@ -1,0 +1,16 @@
+print("=== Challenge 1: Collatz Conjecture ===")
+cur_num = int(input("Enter starting number:"))
+step = 0
+print(" Sequence: ", end="")
+while cur_num != 1:
+    print(cur_num, end=" ")
+    if cur_num % 2 == 0: # even
+        cur_num //= 2
+    else: # odd
+        cur_num = (cur_num * 3) + 1
+    step += 1
+
+print(cur_num, end=" ")
+print("\nSteps:", step) # I was lost here but I forgot we could use \n for new line
+
+print("")
