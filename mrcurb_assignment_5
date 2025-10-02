@@ -14,3 +14,19 @@ print(cur_num, end=" ")
 print("\nSteps:", step) # I was lost here but I forgot we could use \n for new line
 
 print("")
+
+#Next Challenge
+print("=== Challenge 2: Prime Number Checker ===")
+
+numbre = int(input("Enter a number: "))
+prime = True
+print(f"Testing divisors from 2 to {numbre - 1}...")
+for i in range(2, numbre): #every number divided by 1 
+    if numbre % i == 0:
+        # it can be divided by sum not 1
+        print(f"{numbre} is not prime (divisible by {i})")
+        prime = False
+        break # we done zo
+if prime:
+    print(f"{numbre} is prime!")
+print("")
