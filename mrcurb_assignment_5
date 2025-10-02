@@ -30,3 +30,20 @@ for i in range(2, numbre): #every number divided by 1
 if prime:
     print(f"{numbre} is prime!")
 print("")
+
+# Final
+
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+
+print("", end="")
+for colum_num in range(1,11): # variable lables which numbers these are
+    print(f" {colum_num:4}", end="")
+print("")
+
+for row_num in range(1, 11): #same thing bro but with rows instead of columns 
+    print(f"{row_num:2}", end="")
+    for colum_num in range(1, 11):
+        table = row_num * colum_num # make variable to store the table values after multiplying them
+        print(f"{table:4}", end="")
+    print("")
